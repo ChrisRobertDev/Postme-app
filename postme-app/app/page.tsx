@@ -17,7 +17,7 @@ export default function Home() {
   });
   if (error) return error;
   if (isLoading) return "Loading...";
-  //console.log(data);
+  console.log(data);
   return (
     <main>
       <AddPost />
@@ -26,7 +26,7 @@ export default function Home() {
           key={post.id}
           name={post.user.name}
           avatar={post.user.image}
-          postTitle={post.title}
+          title={post.title}
           id={post.id}
           comments={post.Comment}
         />
